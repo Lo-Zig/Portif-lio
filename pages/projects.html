@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/projects.css">
+    <script defer src="/src/js/script.js"></script>
+</head>
+
+<header>
+    <div class="logo">
+        <a href="/index.html"><img class="image-logo" src="/src/img/leytaZ.png" alt=""></a>
+    </div>
+    <div class="logo">
+        <a href="https://www.instagram.com.br/loziglioli"><img class="image-logo" src="/src/img/insta.png" alt=""></a>
+    </div>
+</header>
+
+<body>
+    <section class="all">
+        <section class="section-lista">
+            <a href="https://github.com/Lo-Zig/TrasHealth" class="lista" data-image="/src/img/python.png">
+                <div>
+                    <p class="descricao">
+                        <img src="/src/img/python.png" class="images-linguagens">
+                        Um sistema que mapeia os pontos de descarte de lixo eletrônico em nossa cidade. Ele também
+                        possibilita que o usuário crie anúncios relacionados ao descarte responsável desse tipo de
+                        resíduo.
+                    </p>
+                </div>
+            </a>
+            <a href="https://github.com/Lo-Zig/Alura-books" class="lista" data-image="/src/img/JavaScript-logo.png">
+                <div>
+                    <p class="descricao">
+                        <img src="/src/img/JavaScript-logo.png" class="images-linguagens">
+                        Um site que mostra os livros disponíveis no estoque (orientado a API)
+                    </p>
+                </div>
+            </a>
+            <a href="https://github.com/Lo-Zig/Meu-primeiro-app-flutter" class="lista"
+                data-image="/src/img/Dart-logo.png">
+                <div>
+                    <p class="descricao">
+                        <img src="/src/img/Dart-logo.png" class="images-linguagens">
+                        Um app de tarefas, onde você marca a dificuldade e acompanha o progresso de
+                        realização
+                    </p>
+                </div>
+            </a>
+            <a href="https://github.com/Lo-Zig/Fokus" class="lista" data-image="/src/img/JavaScript-logo.png">
+                <div>
+                    <p class="descricao">
+                        <img src="/src/img/JavaScript-logo.png" class="images-linguagens">
+                        Um timer para estudos!
+                    </p>
+                </div>
+            </a>
+
+            <div class="btn">
+                <a href="https://github.com/Lo-Zig?tab=repositories" class="aboutme">
+                    <img class="git"
+                        src="/src/img/png-transparent-github-computer-icons-github-logo-monochrome-head-thumbnail.png"
+                        alt=""> Repositório completo
+                </a>
+            </div>
+        </section>
+        <div class="container-imagem">
+            <img class="image-container" id="preview-image" src="/src/img/assign-removebg-preview.png" alt=""
+                style="transition: opacity 200ms ease-in-out;">
+        </div>
+    </section>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const listItems = document.querySelectorAll(".lista");
+        const previewImage = document.getElementById("preview-image");
+
+        listItems.forEach(item => {
+            item.addEventListener("mouseover", () => {
+                const imagePath = item.getAttribute("data-image");
+                previewImage.style.opacity = 0;
+                setTimeout(() => {
+                    previewImage.src = imagePath;
+                    previewImage.style.opacity = 1;
+                }, 200);
+            });
+
+            item.addEventListener("mouseout", () => {
+                previewImage.style.opacity = 0;
+                setTimeout(() => {
+                    previewImage.src = "/src/img/assign-removebg-preview.png";
+                    previewImage.style.opacity = 1;
+                }, 200);
+            });
+        });
+    });
+</script>
+
+</html>
