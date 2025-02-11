@@ -16,6 +16,10 @@ section{
 }
 .image-logo {
     width: 2.5vw;
+    transition: 300ms;
+}
+.image-logo:hover {
+    transform: scale(1.1);
 }
 .images-linguagens{
     width: 3.02vw; /* 58px -> 3.02vw */
@@ -26,7 +30,7 @@ section{
 }
 .lista{
     display: flex;
-    border: 0.1vw solid #6733f6; /* 2px -> 0.1vw */
+    border: 0.2vw solid #6733f6; /* 2px -> 0.1vw */
     border-radius: 0.63vw; /* 12px -> 0.63vw */
     padding: 0.5vw;
     align-items: center;
@@ -34,7 +38,7 @@ section{
     transition: 300ms;
 }
 .lista:hover{
-    border: 0.1vw solid #ffbfbd; /* 2px -> 0.1vw */
+    border: 0.2vw solid #ffbfbd; /* 2px -> 0.1vw */
     transform: scale(1.04);
 }
 .btn{
@@ -46,7 +50,7 @@ section{
 }
 .aboutme {
     display: flex;
-    border: 0.052vw solid #6733f6;
+    border: 0.2vw solid #6733f6;
     background-color: #6733f6;
     color: white;
     padding: 0.42vw 0.83vw; /* 8px 16px -> 0.42vw 0.83vw */
@@ -120,3 +124,30 @@ section{
 }
 .prev { left: 0; }
 .next { right: 0; }
+
+.section-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.cards{
+    width: 18vw;
+    height: 30vw;
+    border: 3px solid #6733f6;
+    border-radius: 16px;
+    padding: 2vw;
+}
+.img-card{
+    width: 5vw;
+    border: 2px solid #6733f6;
+    padding: 0.5vw;
+    border-radius: 9999px;
+}
+.titulo-card{
+    color: #6733f6;
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+}
+.descricao-card{
+    font-size: 1.5vw;
+    text-align: justify;
+}
