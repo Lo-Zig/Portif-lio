@@ -75,3 +75,48 @@ section{
 .image-container{
     width: 22.83vw; /* 400px -> 20.83vw */
 }
+.titulo {
+    font-size: 6vw;
+    font-weight: 900;
+    color: #6733f6;
+}
+.projetos-titulo{
+    margin-bottom: 2vw;
+    text-align: c;
+}
+.projetos{
+    text-align: center;
+}
+.carousel-container {
+    position: relative;
+    width: 60vw;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+    align-items: center;
+}
+.projetos-image {
+    width: 100%;
+    display: flex;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.prev { left: 0; }
+.next { right: 0; }
