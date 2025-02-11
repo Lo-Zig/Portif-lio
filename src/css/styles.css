@@ -14,13 +14,19 @@ header {
     width: 2.5vw;
     transition: 300ms;
 }
+
 .image-logo:hover {
     transform: scale(1.1);
 }
 
+html {
+    height: 100%;
+    background: rgb(103, 51, 246);
+    background: linear-gradient(0deg, rgba(103, 51, 246, 0.09007352941176472) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
 body {
     padding: 0 10vw;
-    margin-bottom: 8vw;
     background-image: url(/src/img/piazinho.png);
     background-repeat: no-repeat;
     background-position: 65vw;
@@ -29,7 +35,7 @@ body {
 
 section {
     display: flex;
-    height: 30vw;
+    height: 35vw;
     align-items: center;
 }
 
@@ -77,9 +83,54 @@ a {
     font-size: 1.15vw;
     transition: 300ms;
 }
-.aboutme:hover{
+
+.aboutme:hover {
     transform: scale(1.1);
 }
-.projects:hover{
+
+.projects:hover {
     transform: scale(1.1);
+}
+
+.contact {
+    width: 3vw;
+    border: 2px solid #fc98ec;
+    border-radius: 999px;
+    padding: 2px
+}
+
+.bt {
+    background-color: transparent;
+    border: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.modal-icons img {
+    width: 40px;
+    height: 40px;
 }

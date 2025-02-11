@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/styles.css">
     <title>Zig</title>
     <link rel="icon" type="icon" href="/src/img/leytaZ.png" class="icn">
@@ -13,7 +13,7 @@
         <a href="/index.html"><img class="image-logo" src="/src/img/leytaZ.png" alt=""></a>
     </div>
     <div class="logo">
-        <a href="https://www.instagram.com.br/loziglioli"><img class="image-logo" src="/src/img/insta.png" alt=""></a>
+        <button id="myBtn" class="bt"><img class="image-logo contact" src="/src/img/contact.png" alt=""></button>
     </div>
 </header>
 
@@ -24,7 +24,8 @@
                 DESIGNER <br> & DEV
             </h1>
             <p class="descricao">
-                Olá, meu nome é Lorenzo Ziglioli. Sou um desenvolvedor júnior e busco constantemente aprender cada vez mais! <br>
+                Olá, meu nome é Lorenzo Ziglioli. Sou um desenvolvedor júnior e busco constantemente aprender cada vez
+                mais! <br>
                 Que tal conhecer um pouco mais sobre mim e conferir alguns dos projetos nos quais contribui? ;)
             </p>
             <div class="btn">
@@ -32,8 +33,33 @@
                 <a href="/pages/about-me.html" class="aboutme">Sobre mim</a>
             </div>
         </div>
-
     </section>
-</body>
 
+    <div id="myModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span id="closeModal" style="cursor:pointer; float:right; font-size: 20px;">&times;</span>
+            <div class="modal-icons">
+                <a href="https://www.instagram.com/loziglioli" target="_blank"><img class="image-logo" src="/src/img/instagram.png" alt="Instagram"></a>
+                <a href="https://wa.me/49998319020" target="_blank"><img class="image-logo" src="/src/img/whatsapp.png" alt="WhatsApp"></a>
+                <a href="mailto:loziglioli@email.com"><img class="image-logo" src="/src/img/email.svg" alt="E-mail"></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("myBtn").addEventListener("click", function () {
+            document.getElementById("myModal").style.display = "flex";
+        });
+
+        document.getElementById("closeModal").addEventListener("click", function () {
+            document.getElementById("myModal").style.display = "none";
+        });
+
+        window.addEventListener("click", function (event) {
+            if (event.target === document.getElementById("myModal")) {
+                document.getElementById("myModal").style.display = "none";
+            }
+        });
+    </script>
+</body>
 </html>

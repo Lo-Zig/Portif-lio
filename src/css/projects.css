@@ -3,94 +3,121 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
 }
-body{
+
+body {
     padding: 0 12.5vw;
+    background: rgb(103, 51, 246);
+    background: linear-gradient(0deg, rgba(103, 51, 246, 0.09007352941176472) 0%, rgba(255, 255, 255, 1) 100%);
 }
+
 header {
     padding: 2.5vw 0;
     display: flex;
     justify-content: space-between;
 }
-section{
+
+section {
     margin-bottom: 5vw;
 }
+
 .image-logo {
     width: 2.5vw;
     transition: 300ms;
 }
+
 .image-logo:hover {
     transform: scale(1.1);
 }
-.images-linguagens{
-    width: 3.02vw; /* 58px -> 3.02vw */
-    margin: 0 0.63vw; /* 12px -> 0.63vw */
+
+.images-linguagens {
+    width: 3.02vw;
+    /* 58px -> 3.02vw */
+    margin: 0 0.63vw;
+    /* 12px -> 0.63vw */
 }
-.section-lista{
-    width: 50%;
-}
-.lista{
+
+.lista {
     display: flex;
-    border: 0.2vw solid #6733f6; /* 2px -> 0.1vw */
-    border-radius: 0.63vw; /* 12px -> 0.63vw */
+    border: 0.2vw solid #6733f6;
+    /* 2px -> 0.1vw */
+    border-radius: 0.63vw;
+    /* 12px -> 0.63vw */
     padding: 0.5vw;
     align-items: center;
-    margin-bottom: 0.63vw; /* 12px -> 0.63vw */
+    margin-bottom: 0.63vw;
+    /* 12px -> 0.63vw */
     transition: 300ms;
 }
-.lista:hover{
-    border: 0.2vw solid #ffbfbd; /* 2px -> 0.1vw */
+
+.lista:hover {
+    border: 0.2vw solid #ffbfbd;
+    /* 2px -> 0.1vw */
     transform: scale(1.04);
 }
-.btn{
-    margin: 1.09vw 0; /* 21px -> 1.09vw */
+
+.btn {
+    margin: 1.09vw 0;
+    /* 21px -> 1.09vw */
 }
-.descricao{
+
+.descricao {
     display: flex;
     align-items: center;
+    color: black;
 }
+
 .aboutme {
     display: flex;
     border: 0.2vw solid #6733f6;
     background-color: #6733f6;
     color: white;
-    padding: 0.42vw 0.83vw; /* 8px 16px -> 0.42vw 0.83vw */
+    padding: 0.42vw 0.83vw;
+    /* 8px 16px -> 0.42vw 0.83vw */
     border-radius: 0.312vw;
     font-weight: 600;
     font-size: 1.15vw;
     transition: 300ms;
 }
-.aboutme:hover{
+
+.aboutme:hover {
     background-color: #ffbfbd;
     color: black;
 }
-.git{
-    width: 1.56vw; /* 30px -> 1.56vw */
-    margin: 0 0.63vw 0 0; /* 12px -> 0.63vw */
+
+.git {
+    width: 1.56vw;
+    /* 30px -> 1.56vw */
+    margin: 0 0.63vw 0 0;
+    /* 12px -> 0.63vw */
 }
-.all{
-    display: flex;
-}
-.container-imagem{
+
+.container-imagem {
     display: flex;
     width: 50%;
     justify-content: center;
     align-items: center;
 }
-.image-container{
-    width: 22.83vw; /* 400px -> 20.83vw */
+
+.image-container {
+    width: 22.83vw;
+    /* 400px -> 20.83vw */
 }
+
 .titulo {
     font-size: 6vw;
     font-weight: 900;
     color: #6733f6;
 }
-.projetos-titulo{
+
+.projetos-titulo {
     margin-bottom: 2vw;
     text-align: c;
 }
-.projetos{
+
+.projetos {
     text-align: center;
 }
+
 .carousel-container {
     position: relative;
     width: 60vw;
@@ -99,7 +126,8 @@ section{
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: 0 auto; /* Centraliza horizontalmente */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
 }
 
 .carousel {
@@ -108,11 +136,14 @@ section{
     text-align: center;
     align-items: center;
 }
+
 .projetos-image {
     width: 100%;
     display: flex;
 }
-.prev, .next {
+
+.prev,
+.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -122,32 +153,42 @@ section{
     padding: 10px;
     cursor: pointer;
 }
-.prev { left: 0; }
-.next { right: 0; }
 
-.section-cards{
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.section-cards {
     display: flex;
     justify-content: space-between;
 }
-.cards{
+
+.cards {
     width: 18vw;
     height: 30vw;
     border: 3px solid #6733f6;
     border-radius: 16px;
     padding: 2vw;
 }
-.img-card{
+
+.img-card {
     width: 5vw;
     border: 2px solid #6733f6;
     padding: 0.5vw;
     border-radius: 9999px;
 }
-.titulo-card{
+
+.titulo-card {
     color: #6733f6;
     font-size: 2.5vw;
     margin-bottom: 1vw;
 }
-.descricao-card{
+
+.descricao-card {
     font-size: 1.5vw;
     text-align: justify;
 }

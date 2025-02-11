@@ -16,7 +16,9 @@
         <a href="/index.html"><img class="image-logo" src="/src/img/leytaZ.png" alt=""></a>
     </div>
     <div class="logo">
-        <a href="https://www.instagram.com.br/loziglioli"><img class="image-logo" src="/src/img/insta.png" alt=""></a>
+        <a href="https://github.com/Lo-Zig"><img class="image-logo"
+                src="/src/img/png-transparent-github-computer-icons-github-logo-monochrome-head-thumbnail.png"
+                alt=""></a>
     </div>
 </header>
 
@@ -81,7 +83,7 @@
                 </h1>
                 <p class="descricao-card">
                     Posso até não saber de cara, mas enquanto nada me impedir de aprender, farei o que for necessário
-                    Acredito que o aprendizado é uma jornada contínua. 
+                    Acredito que o aprendizado é uma jornada contínua.
                 </p>
             </div>
         </div>
@@ -134,44 +136,9 @@
             </a>
 
         </section>
-        <div class="container-imagem">
-            <img class="image-container" id="preview-image" src="/src/img/assign-removebg-preview.png" alt=""
-                style="transition: opacity 200ms ease-in-out;">
-        </div>
     </section>
-    <div class="btn">
-        <a href="https://github.com/Lo-Zig?tab=repositories" class="aboutme">
-            <img class="git"
-                src="/src/img/png-transparent-github-computer-icons-github-logo-monochrome-head-thumbnail.png" alt="">
-            Repositório completo
-        </a>
-    </div>
+
 </body>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const listItems = document.querySelectorAll(".lista");
-        const previewImage = document.getElementById("preview-image");
-
-        listItems.forEach(item => {
-            item.addEventListener("mouseover", () => {
-                const imagePath = item.getAttribute("data-image");
-                previewImage.style.opacity = 0;
-                setTimeout(() => {
-                    previewImage.src = imagePath;
-                    previewImage.style.opacity = 1;
-                }, 200);
-            });
-
-            item.addEventListener("mouseout", () => {
-                previewImage.style.opacity = 0;
-                setTimeout(() => {
-                    previewImage.src = "/src/img/assign-removebg-preview.png";
-                    previewImage.style.opacity = 1;
-                }, 200);
-            });
-        });
-    });
-</script>
 <script>
     let currentIndex = 0;
     const images = document.querySelectorAll('.projetos-image');
