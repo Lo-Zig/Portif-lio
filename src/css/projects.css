@@ -38,7 +38,6 @@ section{
     transform: scale(1.04);
 }
 .btn{
-    display: flex;
     margin: 1.09vw 0; /* 21px -> 1.09vw */
 }
 .descricao{
