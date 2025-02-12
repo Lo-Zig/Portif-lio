@@ -173,6 +173,7 @@
     }
     .descricao{
         text-align: justify;
+        font-size: 15px;;
         margin-bottom: 28px;
     }
     .btn{
