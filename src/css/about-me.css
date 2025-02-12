@@ -1,134 +1,199 @@
-* {
-    margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-decoration: none;
+@media screen and (min-width: 960px) {
+    * {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-decoration: none;
+    }
+
+    body {
+        padding: 0 12.5vw;
+        background: rgb(103, 51, 246);
+        background: linear-gradient(0deg, rgba(103, 51, 246, 0.09007352941176472) 0%, rgba(255, 255, 255, 1) 100%);
+    }
+
+    header {
+        padding: 2.5vw 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section {
+        margin-bottom: 5vw;
+    }
+
+    .image-logo {
+        width: 2.5vw;
+        transition: 300ms;
+    }
+
+    .image-logo:hover {
+        transform: scale(1.1);
+    }
+
+    .info1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .image-zig {
+        width: 20.83vw;
+        /* 400px -> 20.83vw */
+        border-radius: 1.25vw;
+        /* 24px -> 1.25vw */
+        border: 0.52vw solid #464f70;
+        /* 10px -> 0.52vw */
+    }
+
+    .titulo {
+        font-size: 6vw;
+        font-weight: 900;
+        color: #6733f6;
+    }
+
+    .txt2 {
+        text-align: right;
+    }
+
+    .descricao {
+        display: flex;
+        font-size: 1.15vw;
+        width: 70%;
+        margin: 2vw 0;
+        text-align: left;
+    }
+
+    .info2 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .image-zig2 {
+        height: 15.63vw;
+        /* 300px -> 15.63vw */
+        border-radius: 1.25vw;
+        /* 24px -> 1.25vw */
+        border: 0.52vw solid #464f70;
+        /* 10px -> 0.52vw */
+        margin: 0 6vw 0 0;
+    }
+
+    .titulo2 {
+        font-size: 6vw;
+        font-weight: 900;
+        color: #6733f6;
+    }
+
+    .descricao2 {
+        display: flex;
+        font-size: 1.15vw;
+        margin: 2vw 0;
+        text-align: right;
+    }
+
+    .info3 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .image-zig3 {
+        height: 15.63vw;
+        /* 300px -> 15.63vw */
+        border-radius: 1.25vw;
+        /* 24px -> 1.25vw */
+        border: 0.52vw solid #464f70;
+        /* 10px -> 0.52vw */
+    }
+
+    .image-zig4 {
+        width: 20vw;
+        border-radius: 1.25vw;
+        /* 24px -> 1.25vw */
+        border: 0.52vw solid #464f70;
+        /* 10px -> 0.52vw */
+    }
+
+    .titulo4 {
+        font-size: 6vw;
+        font-weight: 900;
+        color: #6733f6;
+    }
+
+    .txt4 {
+        text-align: center;
+    }
+
+    .descricao4 {
+        font-size: 1.15vw;
+        margin: 2vw 0;
+        padding: 0 5vw;
+        text-align: justify;
+    }
+
+    .music {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 
-body {
-    padding: 0 12.5vw;
-    background: rgb(103,51,246);
-background: linear-gradient(0deg, rgba(103,51,246,0.09007352941176472) 0%, rgba(255,255,255,1) 100%);
-}
+@media screen and (max-width: 959px) {
+    * {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-decoration: none;
+    }
 
-header {
-    padding: 2.5vw 0;
-    display: flex;
-    justify-content: space-between;
-}
+    body {
+        padding: 0 5vw;
+        text-align: center;
+    }
 
-section {
-    margin-bottom: 5vw;
-}
+    header {
+        padding: 2.5vw 7.5vw;
+        display: flex;
+        justify-content: space-between;
+    }
 
-.image-logo {
-    width: 2.5vw;
-    transition: 300ms;
-}
+    .image-logo {
+        width: 48px;
+    }
+    .about-me{
+        margin-bottom: 35px;
+    }
+    .info1 {
+        display: grid;
+        align-items: center;
+        gap: 15px;
+    }
 
-.image-logo:hover {
-    transform: scale(1.1);
-}
+    .image-zig {
+        width: 100%;
+        border-radius: 24px;
+        border: 4px solid #464f70;
+    }
 
-.info1 {
-    display: flex;
-    justify-content: space-between;
-}
 
-.image-zig {
-    width: 20.83vw;
-    /* 400px -> 20.83vw */
-    border-radius: 1.25vw;
-    /* 24px -> 1.25vw */
-    border: 0.52vw solid #464f70;
-    /* 10px -> 0.52vw */
-}
+    .titulo {
+        font-size: 55px;
+        font-weight: 900;
+        color: #6733f6;
+    }
 
-.titulo {
-    font-size: 6vw;
-    font-weight: 900;
-    color: #6733f6;
-}
+    .txt2 {
+        text-align: right;
+    }
 
-.txt2 {
-    text-align: right;
-}
+    .descricao {
+        display: flex;
+        font-size: 15px;
+        margin: 2vw 0;
+        text-align: left;
+    }
+    .image-zig2 {
+        width: 100%;
+        border-radius: 24px;
+        border: 4px solid #464f70;
+        margin: 5px 0;
+    }
 
-.descricao {
-    display: flex;
-    font-size: 1.15vw;
-    width: 70%;
-    margin: 2vw 0;
-    text-align: left;
-}
 
-.info2 {
-    display: flex;
-    justify-content: space-between;
-}
-
-.image-zig2 {
-    height: 15.63vw;
-    /* 300px -> 15.63vw */
-    border-radius: 1.25vw;
-    /* 24px -> 1.25vw */
-    border: 0.52vw solid #464f70;
-    /* 10px -> 0.52vw */
-    margin: 0 6vw 0 0;
-}
-
-.titulo2 {
-    font-size: 6vw;
-    font-weight: 900;
-    color: #6733f6;
-}
-
-.descricao2 {
-    display: flex;
-    font-size: 1.15vw;
-    margin: 2vw 0;
-    text-align: right;
-}
-
-.info3 {
-    display: flex;
-    justify-content: space-between;
-}
-
-.image-zig3 {
-    height: 15.63vw;
-    /* 300px -> 15.63vw */
-    border-radius: 1.25vw;
-    /* 24px -> 1.25vw */
-    border: 0.52vw solid #464f70;
-    /* 10px -> 0.52vw */
-}
-
-.image-zig4 {
-    width: 20vw;
-    border-radius: 1.25vw;
-    /* 24px -> 1.25vw */
-    border: 0.52vw solid #464f70;
-    /* 10px -> 0.52vw */
-}
-
-.titulo4 {
-    font-size: 6vw;
-    font-weight: 900;
-    color: #6733f6;
-}
-
-.txt4 {
-    text-align: center;
-}
-
-.descricao4 {
-    font-size: 1.15vw;
-    margin: 2vw 0;
-    padding: 0 5vw;
-    text-align: justify;
-}
-
-.music {
-    display: flex;
-    justify-content: space-evenly;
 }

@@ -37,29 +37,34 @@
 
     <div id="myModal" class="modal" style="display: none;">
         <div class="modal-content">
-            <span id="closeModal" style="cursor:pointer; float:right; font-size: 20px;">&times;</span>
-            <div class="modal-icons">
-                <a href="https://www.instagram.com/loziglioli" target="_blank"><img class="image-logo" src="/src/img/instagram.png" alt="Instagram"></a>
-                <a href="https://wa.me/49998319020" target="_blank"><img class="image-logo" src="/src/img/whatsapp.png" alt="WhatsApp"></a>
-                <a href="mailto:loziglioli@email.com"><img class="image-logo" src="/src/img/email.svg" alt="E-mail"></a>
-            </div>
+            <span id="closeModal" style="cursor:pointer;">
+                <div class="modal-icons">
+                    <a href="https://www.instagram.com/loziglioli" target="_blank"><img class="image-logo"
+                            src="/src/img/instagram.png" alt="Instagram"></a>
+                    <a href="https://wa.me/49998319020" target="_blank"><img class="image-logo"
+                            src="/src/img/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="mailto:loziglioli@email.com"><img class="image-logo" src="/src/img/email.svg"
+                            alt="E-mail"></a>
+                </div>
         </div>
     </div>
 
-    <script>
-        document.getElementById("myBtn").addEventListener("click", function () {
-            document.getElementById("myModal").style.display = "flex";
-        });
-
-        document.getElementById("closeModal").addEventListener("click", function () {
-            document.getElementById("myModal").style.display = "none";
-        });
-
-        window.addEventListener("click", function (event) {
-            if (event.target === document.getElementById("myModal")) {
-                document.getElementById("myModal").style.display = "none";
-            }
-        });
-    </script>
+    <img class="piazinho-mobile" src="/src/img/piazinho.png" alt="">
 </body>
+<script>
+    document.getElementById("myBtn").addEventListener("click", function () {
+        document.getElementById("myModal").style.display = "flex";
+    });
+
+    document.getElementById("closeModal").addEventListener("click", function () {
+        document.getElementById("myModal").style.display = "none";
+    });
+
+    window.addEventListener("click", function (event) {
+        if (event.target === document.getElementById("myModal")) {
+            document.getElementById("myModal").style.display = "none";
+        }
+    });
+</script>
+
 </html>
