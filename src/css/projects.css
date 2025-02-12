@@ -46,6 +46,7 @@ section {
     align-items: center;
     margin-bottom: 0.63vw;
     /* 12px -> 0.63vw */
+    background-color: white;
     transition: 300ms;
 }
 
