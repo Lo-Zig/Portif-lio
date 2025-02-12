@@ -133,6 +133,10 @@
         display: flex;
         justify-content: space-evenly;
     }
+
+    .image-zig2-o {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 959px) {
@@ -156,9 +160,11 @@
     .image-logo {
         width: 48px;
     }
-    .about-me{
+
+    .about-me {
         margin-bottom: 35px;
     }
+
     .info1 {
         display: grid;
         align-items: center;
@@ -186,8 +192,9 @@
         display: flex;
         font-size: 18px;
         margin: 2vw 0;
-        text-align: left;
+        text-align: justify;
     }
+
     .image-zig2 {
         width: 100%;
         border-radius: 24px;
@@ -195,5 +202,103 @@
         margin: 5px 0;
     }
 
+    .info2 {
+        display: grid;
+        align-items: center;
+        gap: 15px;
+    }
 
+    .image-zig2 {
+        display: none;
+    }
+
+    .image-zig2-o {
+        width: 100%;
+        border-radius: 24px;
+        border: 4px solid #464f70;
+    }
+
+    .titulo2 {
+        font-size: 50px;
+        font-weight: 900;
+        color: #6733f6;
+    }
+
+    .txt2 {
+        text-align: center;
+    }
+
+    .descricao2 {
+        display: flex;
+        font-size: 18px;
+        margin: 2vw 0;
+        text-align: justify;
+    }
+
+
+
+
+    .info13 {
+        display: grid;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .image-zig3 {
+        width: 100%;
+        border-radius: 24px;
+        border: 4px solid #464f70;
+        margin-top: 10px;
+    }
+
+
+    .titulo3 {
+        font-size: 50px;
+        font-weight: 900;
+        color: #6733f6;
+    }
+
+    .txt3 {
+        text-align: center;
+    }
+
+    .descricao3 {
+        display: flex;
+        font-size: 18px;
+        margin: 2vw 0;
+        text-align: justify;
+    }
+
+
+
+
+    .info4 {
+        display: grid;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .image-zig4 {
+        width: 100%;
+        border-radius: 24px;
+        border: 4px solid #464f70;
+    }
+
+
+    .titulo4 {
+        font-size: 50px;
+        font-weight: 900;
+        color: #6733f6;
+    }
+
+    .txt4 {
+        text-align: center;
+    }
+
+    .descricao4 {
+        display: flex;
+        font-size: 18px;
+        margin: 2vw 0;
+        text-align: justify;
+    }
 }
