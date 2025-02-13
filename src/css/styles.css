@@ -6,104 +6,174 @@
     }
 
     header {
-        padding: 2.5vw;
+        align-items: center;
         display: flex;
+        padding: 1vw 2vw;
         justify-content: space-between;
-    }
-
-    .image-logo {
-        width: 2.5vw;
-        transition: 300ms;
-    }
-
-    .image-logo:hover {
-        transform: scale(1.1);
-    }
-
-    html {
-        height: 100%;
-        background: rgb(103, 51, 246);
-        background: linear-gradient(0deg, rgba(103, 51, 246, 0.09007352941176472) 0%, rgba(255, 255, 255, 1) 100%);
-    }
-
-    body {
-        padding: 0 10vw;
-        background-image: url(/src/img/piazinho.png);
-        background-repeat: no-repeat;
-        background-position: 65vw;
-        background-size: 25%;
+        background-color: #6733f6
     }
 
     section {
+        margin-bottom: 65px;
+    }
+
+    .right {
         display: flex;
-        height: 35vw;
         align-items: center;
+        gap: 30px;
     }
 
-    .titulo {
-        font-size: 6vw;
-        font-weight: 900;
+    .btn-aboutme {
         color: #6733f6;
-    }
-
-    .descricao {
-        display: flex;
-        font-size: 1.15vw;
-        width: 70%;
-        margin: 2vw 0;
-
-    }
-
-    .btn {
-        display: flex;
-        width: 50%;
-    }
-
-    a {
-        margin: 0 0.625vw 0 0;
-    }
-
-    .projects {
-        border: 0.152vw solid #000000;
-        background-color: #ffbfbd;
-        color: black;
-        padding: 6px 12px;
-        border-radius: 0.312vw;
-        font-weight: 900;
-        font-size: 1.15vw;
-        transition: 300ms;
-    }
-
-    .aboutme {
-        border: 0.152vw solid #000000;
-        background-color: #6733f6;
-        color: white;
-        padding: 8px 16px;
-        border-radius: 0.312vw;
-        font-weight: 900;
-        font-size: 1.15vw;
-        transition: 300ms;
-    }
-
-    .aboutme:hover {
-        transform: scale(1.1);
-    }
-
-    .projects:hover {
-        transform: scale(1.1);
+        font-weight: 700;
+        background-color: white;
+        border: 2px solid white;
+        padding: 7px;
+        border-radius: 12px;
+        text-decoration: none;
     }
 
     .contact {
-        width: 3vw;
-        border: 2px solid #fc98ec;
-        border-radius: 999px;
-        padding: 2px
+        color: #6733f6;
+        font-weight: 600;
+        border: 2px solid white;
+        padding: 7px;
+        border-radius: 40px;
     }
 
-    .bt {
-        background-color: transparent;
-        border: 0;
+    .header-image {
+        width: 48px;
     }
+
+    .first-section {
+        display: flex;
+        align-items: center;
+    }
+
+    .info {
+        width: 50%;
+        padding: 8vw;
+    }
+
+    .image {
+        width: 50%;
+        text-align: center;
+    }
+
+    .section-image {
+        width: 29vw;
+    }
+
+    .titulo {
+        text-align: center;
+        font-size: 6vw;
+        text-align: left;
+        color: #6733f6
+    }
+
+    .descricao {
+        text-align: left;
+        font-size: 1.4vw;
+        color: rgb(85, 85, 85);
+    }
+
+    .container-projetos {
+        text-align: center;
+    }
+
+    .titulo-projetos {
+        text-align: center;
+        font-size: 6vw;
+        color: #6733f6;
+    }
+
+    .descricao-projetos {
+        font-size: 1.4vw;
+        color: rgb(85, 85, 85);
+        padding: 0 8vw;
+        text-align: left;
+    }
+
+    .projetos-image {
+        width: 83.7%;
+        margin: 22px 0;
+    }
+
+    .trashealth {
+        display: flex;
+        align-items: center;
+        margin-top: 3vw;
+        margin-left: 8vw;
+        color: #f7a073;
+        text-align: left;
+    }
+
+    .alurabooks {
+        display: flex;
+        align-items: center;
+        margin-top: 3vw;
+        margin-left: 8vw;
+        color: #144468;
+        text-align: left;
+    }
+
+    .fokus {
+        display: flex;
+        align-items: center;
+        margin-top: 3vw;
+        margin-left: 8vw;
+        color: #861ff1;
+        text-align: left;
+    }
+
+    .compras {
+        display: flex;
+        align-items: center;
+        margin-top: 3vw;
+        margin-left: 8vw;
+        color: #f55b64;
+        text-align: left;
+    }
+
+    .section-cards {
+        display: flex;
+        justify-content: space-between;
+        padding: 65px 8vw 0;
+    }
+
+    .cards {
+        width: 22vw;
+        height: 30vw;
+        border: 3px solid #6733f6;
+        border-radius: 16px;
+        padding: 2vw;
+        background-color: white;
+    }
+
+    .linguagens-logo {
+        width: 4vw;
+        margin-right: 1vw;
+    }
+
+    .img-card {
+        width: 5vw;
+        border: 2px solid #6733f6;
+        padding: 0.5vw;
+        border-radius: 9999px;
+    }
+
+    .titulo-card {
+        color: #6733f6;
+        font-size: 2.8vw;
+        margin-bottom: 1vw;
+    }
+
+    .descricao-card {
+        font-size: 1.4vw;
+        text-align: justify;
+    }
+
+
 
     .modal {
         display: none;
@@ -125,21 +195,22 @@
         text-align: center;
     }
 
-    .modal-icons {
-        display: flex;
-        gap: 20px;
-        justify-content: center;
+    .close {
+        float: right;
+        font-size: 24px;
+        cursor: pointer;
     }
 
-    .modal-icons img {
-        width: 40px;
-        height: 40px;
+    .icon-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
     }
-    .piazinho-mobile{
-        display: none;
+
+    .img-modal {
+        margin: 10px;
     }
 }
-
 @media screen and (max-width: 959px) {
     * {
         margin: 0;
@@ -147,77 +218,166 @@
         text-decoration: none;
     }
 
-    body {
-        padding: 0 10vw;
-        text-align: center;
-        background-image: url(/src/img/piazinho.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center 300px;
-    }
-
     header {
-        padding: 2.5vw;
+        align-items: center;
         display: flex;
+        padding: 1vw 2vw;
         justify-content: space-between;
+        background-color: #6733f6
     }
 
-    .image-logo {
+    section {
+        margin-bottom: 65px;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .btn-aboutme {
+        color: #6733f6;
+        font-weight: 700;
+        background-color: white;
+        border: 2px solid white;
+        padding: 7px;
+        border-radius: 12px;
+        text-decoration: none;
+    }
+
+    .contact {
+        color: #6733f6;
+        font-weight: 600;
+        border: 2px solid white;
+        padding: 7px;
+        border-radius: 40px;
+    }
+
+    .header-image {
         width: 48px;
     }
+
+    .first-section {
+        align-items: center;
+    }
+
+    .info {
+        padding: 8vw;
+    }
+
+    .image {
+        text-align: center;
+    }
+
+    .section-image {
+        width: 50vw;
+    }
+
     .titulo {
-        font-size: 50px;
-        font-weight: 900;
+        text-align: center;
+        font-size: 12vw;
+        text-align: left;
+        color: #6733f6
+    }
+
+    .descricao {
+        text-align: left;
+        font-size: 4vw;
+        color: rgb(85, 85, 85);
+    }
+
+    .section-cards {
+        padding: 65px 8vw 0;
+    }
+
+    .cards {
+        border: 3px solid #6733f6;
+        margin-bottom: 10px;
+        border-radius: 16px;
+        padding: 2vw;
+        background-color: white;
+    }
+
+    .linguagens-logo {
+        width: 10vw;
+        margin-right: 1vw;
+    }
+
+    .img-card {
+        width: 10vw;
+        border: 2px solid #6733f6;
+        padding: 0.5vw;
+        border-radius: 9999px;
+    }
+
+    .titulo-card {
         color: #6733f6;
-        margin-bottom: 28px;
+        font-size: 12vw;
+        margin-bottom: 1vw;
     }
-    .descricao{
+
+    .descricao-card {
+        font-size: 4vw;
+        color: rgb(85, 85, 85);
         text-align: justify;
-        font-size: 18px;;
-        margin-bottom: 28px;
     }
-    .btn{
-        justify-content: space-between;
+    .container-projetos {
+        text-align: center;
+    }
+
+    .titulo-projetos {
+        text-align: center;
+        font-size: 12vw;
+        color: #6733f6;
+    }
+
+    .descricao-projetos {
+        font-size: 4vw;
+        color: rgb(85, 85, 85);
+        padding: 0 8vw;
+        text-align: left;
+    }
+
+    .projetos-image {
+        width: 83.7%;
+        margin: 22px 0;
+    }
+
+    .trashealth {
         display: flex;
-    }
-    .projects {
-        border: 2px solid #000000;
-        background-color: #ffbfbd;
-        color: black;
-        padding: 5px 18px;
-        border-radius: 12px;
-        font-weight: 900;
-        font-size: 18px;
-        transition: 300ms;
+        align-items: center;
+        margin-top: 3vw;
+        margin-left: 8vw;
+        color: #f7a073;
+        text-align: left;
     }
 
-    .aboutme {
-        border: 2px solid #000000;
-        background-color: #6733f6;
-        color: white;
-        padding: 5px 10px;
-        border-radius: 12px;
-        font-weight: 900;
-        font-size: 18px;
-        transition: 300ms;
+    .alurabooks {
+        display: flex;
+        align-items: center;
+        margin-top: 3vw;
+        margin-left: 8vw;
+        color: #144468;
+        text-align: left;
     }
 
-    .aboutme:hover {
-        transform: scale(1.1);
+    .fokus {
+        display: flex;
+        align-items: center;
+        margin-top: 3vw;
+        margin-left: 8vw;
+        color: #861ff1;
+        text-align: left;
     }
 
-    .projects:hover {
-        transform: scale(1.1);
-    }
-    .contact {
-        border: 2px solid #fc98ec;
-        border-radius: 999px;
-        padding: 2px
-    }
-
-    .bt {
-        background-color: transparent;
-        border: 0;
+    .compras {
+        display: flex;
+        align-items: center;
+        margin-top: 3vw;
+        margin-left: 8vw;
+        color: #f55b64;
+        text-align: left;
     }
 
     .modal {
@@ -240,18 +400,22 @@
         text-align: center;
     }
 
-    .modal-icons {
-        display: flex;
-        gap: 20px;
-        justify-content: center;
+    .close {
+        float: right;
+        font-size: 24px;
+        cursor: pointer;
     }
 
-    .modal-icons img {
-        width: 40px;
-        height: 40px;
+    .icon-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
     }
-    .piazinho-mobile{
-        opacity: 0;
-        height: 400px;
+
+    .img-modal {
+        margin: 10px;
+    }
+    .projeto{
+        margin-top: 65px;
     }
 }

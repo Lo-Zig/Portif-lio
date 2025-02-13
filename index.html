@@ -1,70 +1,187 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width= device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/styles.css">
-    <title>Zig</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/styles.css">
     <link rel="icon" type="icon" href="/src/img/leytaZ.png" class="icn">
+    <title>Zig</title>
 </head>
-<header>
-    <div class="logo">
-        <a href="/index.html"><img class="image-logo" src="/src/img/leytaZ.png" alt=""></a>
-    </div>
-    <div class="logo">
-        <button id="myBtn" class="bt"><img class="image-logo contact" src="/src/img/contact.png" alt=""></button>
-    </div>
-</header>
 
 <body>
-    <section>
-        <div class="infos">
+    <header>
+        <a href="/"><img src="/src/img/leytaZ.png" alt="Uma imagem da header do ZIG" class="header-image"></a>
+        <div class="right"><a href="/pages/about-me.html" class="btn-aboutme">Sobre mim</a>
+            <a href="#" class="btn-contato" id="openModal">
+                <img src="/src/img/contact.png" alt="Contato" class="header-image contact">
+            </a>
+        </div>
+    </header>
+
+
+    <div id="contatoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h5 class="modal-title">Entre em Contato</h5>
+            <div class="modal-body">
+                <div class="icon-container">
+                    <a href="https://wa.me/49998319020" class="img-modal" target="_blank">
+                        <img src="/src/img/whatsapp.png" alt="WhatsApp" width="50">
+                    </a>
+                    <a href="https://www.instagram.com/loziglioli" class="img-modal" target="_blank">
+                        <img src="/src/img/instagram.png" alt="Instagram" width="50">
+                    </a>
+                    <a href="mailto:loziglioli@gmail.com" class="img-modal">
+                        <img src="/src/img/email.svg" alt="E-mail" width="50">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="first-section">
+        <div class="info">
             <h1 class="titulo">
-                DESIGNER <br> & DEV
+                DEVELOPER & DESIGNER
             </h1>
             <p class="descricao">
-                Olá, meu nome é Lorenzo Ziglioli. Sou um desenvolvedor júnior e busco constantemente aprender cada vez
-                mais! <br>
-                Que tal conhecer um pouco mais sobre mim e conferir alguns dos projetos nos quais contribui? ;)
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident optio nostrum tempore repellat id
+                molestiae, perferendis numquam dolores, ad quam deleniti expedita ea, quis iusto eligendi modi esse quia
+                ut!
             </p>
-            <div class="btn">
-                <a href="/pages/projects.html" class="projects">Projetos</a>
-                <a href="/pages/about-me.html" class="aboutme">Sobre mim</a>
+        </div>
+        <div class="image">
+            <img src="/src/img/piazinho.png" alt="" class="section-image">
+        </div>
+    </section>
+
+    </section>
+    <h1 class="titulo-projetos">
+        Habilidades
+    </h1>
+    <section class="section-cards">
+        <div class="cards">
+            <div class="imagem-card">
+                <img class="img-card" src="/src/img/criatividade.png" alt="">
+            </div>
+            <div class="text-dard">
+                <h1 class="titulo-card">
+                    Criatividade!
+                </h1>
+                <p class="descricao-card">
+                    Transformo ideias em soluções inovadoras, trazendo frescor e intensidade a cada linha de código.
+                    Cada projeto é uma oportunidade de criar algo único, sempre buscando a melhor forma de fazer as
+                    coisas.
+                </p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="imagem-card">
+                <img class="img-card" src="/src/img/equipe.png" alt="">
+            </div>
+            <div class="text-dard">
+                <h1 class="titulo-card">
+                    Trabalho em equipe
+                </h1>
+                <p class="descricao-card">
+                    Juntos, podemos unir forças, compartilhar ideias e
+                    superar qualquer desafio. Cada membro traz algo único, e é isso que faz o trabalho em equipe ser tão
+                    poderoso!
+                </p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="imagem-card">
+                <img class="img-card" src="/src/img/estudo.png" alt="">
+            </div>
+            <div class="text-dard">
+                <h1 class="titulo-card">
+                    Sempre aprendendo
+                </h1>
+                <p class="descricao-card">
+                    Posso até não saber de cara, mas enquanto nada me impedir de aprender, farei o que for necessário
+                    Acredito que o aprendizado é uma jornada contínua.
+                </p>
             </div>
         </div>
     </section>
 
-    <div id="myModal" class="modal" style="display: none;">
-        <div class="modal-content">
-            <span id="closeModal" style="cursor:pointer;">
-                <div class="modal-icons">
-                    <a href="https://www.instagram.com/loziglioli" target="_blank"><img class="image-logo"
-                            src="/src/img/instagram.png" alt="Instagram"></a>
-                    <a href="https://wa.me/49998319020" target="_blank"><img class="image-logo"
-                            src="/src/img/whatsapp.png" alt="WhatsApp"></a>
-                    <a href="mailto:loziglioli@email.com"><img class="image-logo" src="/src/img/email.svg"
-                            alt="E-mail"></a>
-                </div>
-        </div>
-    </div>
+    <section class="second-section">
+        <div class="container-projetos">
+            <h1 class="titulo-projetos">
+                Projetos
+            </h1>
+            <div class="projeto">
+                <a href="https://github.com/Lo-Zig/TrasHealth">
+                    <h2 class="trashealth"> <img class="linguagens-logo" src="/src/img/python.png" alt="">TrasHealth
+                    </h2>
+                </a>
+                <img src="/src/img/trash.png" class="projetos-image" alt="">
+                <p class="descricao-projetos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ex saepe
+                    iusto
+                    itaque inventore libero neque tempore quae quia facilis expedita vitae hic alias mollitia sapiente
+                    id,
+                    dolore nam magni.</p>
+            </div>
 
-    <img class="piazinho-mobile" src="/src/img/piazinho.png" alt="">
+
+            <div class="projeto">
+                <a href="https://github.com/Lo-Zig/Alura-books">
+                    <h2 class="alurabooks"> <img class="linguagens-logo" src="/src/img/JavaScript-logo.png"
+                            alt="">AluraBooks</h2>
+                </a>
+                <img src="/src/img/alurabooks.png" class="projetos-image" alt="">
+                <p class="descricao-projetos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ex saepe
+                    iusto
+                    itaque inventore libero neque tempore quae quia facilis expedita vitae hic alias mollitia sapiente
+                    id,
+                    dolore nam magni.</p>
+            </div>
+
+
+            <div class="projeto">
+                <a href="https://github.com/Lo-Zig/Fokus">
+                    <h2 class="fokus"> <img class="linguagens-logo" src="/src/img/JavaScript-logo.png" alt="">Fokus</h2>
+                </a>
+                <img src="/src/img/fokus.png" class="projetos-image" alt="">
+                <p class="descricao-projetos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ex saepe
+                    iusto
+                    itaque inventore libero neque tempore quae quia facilis expedita vitae hic alias mollitia sapiente
+                    id,
+                    dolore nam magni.</p>
+            </div>
+
+
+            <div class="projeto">
+                <a href="https://github.com/Lo-Zig/Lista-De-Compras">
+                    <h2 class="compras"> <img class="linguagens-logo" src="/src/img/JavaScript-logo.png" alt="">Lista de
+                        compras</h2>
+                </a>
+                <img src="/src/img/lista-compras.png" class="projetos-image" alt="">
+                <p class="descricao-projetos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ex saepe
+                    iusto
+                    itaque inventore libero neque tempore quae quia facilis expedita vitae hic alias mollitia sapiente
+                    id,
+                    dolore nam magni.</p>
+            </div>
+        </div>
 </body>
 <script>
-    document.getElementById("myBtn").addEventListener("click", function () {
-        document.getElementById("myModal").style.display = "flex";
+    document.getElementById("openModal").addEventListener("click", function(event) {
+        event.preventDefault();
+        document.getElementById("contatoModal").style.display = "flex";
     });
-
-    document.getElementById("closeModal").addEventListener("click", function () {
-        document.getElementById("myModal").style.display = "none";
+    
+    document.getElementById("closeModal").addEventListener("click", function() {
+        document.getElementById("contatoModal").style.display = "none";
     });
-
-    window.addEventListener("click", function (event) {
-        if (event.target === document.getElementById("myModal")) {
-            document.getElementById("myModal").style.display = "none";
+    
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("contatoModal")) {
+            document.getElementById("contatoModal").style.display = "none";
         }
-    });
-</script>
-
+    };
+    </script>
 </html>
