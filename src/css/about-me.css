@@ -106,9 +106,10 @@ HTML{
 
     .descricao2 {
         display: flex;
-        font-size: 1.15vw;
+        font-size: 1.4vw;
         margin: 2vw 0;
         text-align: right;
+        color: rgb(85, 85, 85);
     }
 
     .info3 {
@@ -144,10 +145,11 @@ HTML{
     }
 
     .descricao4 {
-        font-size: 1.15vw;
+        font-size: 1.4vw;
         margin: 2vw 0;
         padding: 0 5vw;
         text-align: justify;
+        color: rgb(85, 85, 85);
     }
 
     .music {
