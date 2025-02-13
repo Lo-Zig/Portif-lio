@@ -1,6 +1,12 @@
 HTML{
     background-color: white;
 }
+.all{
+    background-color: #feedfb;
+    -webkit-box-shadow: 0px 0px 27px 23px rgba(254,237,251,1);
+    -moz-box-shadow: 0px 0px 27px 23px rgba(254,237,251,1);
+    box-shadow: 0px 0px 27px 23px rgba(254,237,251,1)
+}
 @media screen and (min-width: 960px) {
     * {
         margin: 0;
@@ -141,7 +147,7 @@ HTML{
     .section-cards {
         display: flex;
         justify-content: space-between;
-        padding: 65px 8vw 0;
+        padding: 65px 8vw ;
     }
 
     .cards {
