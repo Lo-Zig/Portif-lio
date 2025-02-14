@@ -106,6 +106,7 @@ HTML{
     .projetos-image {
         width: 83.7%;
         margin: 22px 0;
+        border: 3px solid #656865;
     }
 
     .trashealth {
@@ -115,6 +116,7 @@ HTML{
         margin-left: 8vw;
         color: #f7a073;
         text-align: left;
+        font-size: 2vw;
     }
 
     .alurabooks {
@@ -124,6 +126,7 @@ HTML{
         margin-left: 8vw;
         color: #144468;
         text-align: left;
+        font-size: 2vw;
     }
 
     .fokus {
@@ -133,6 +136,7 @@ HTML{
         margin-left: 8vw;
         color: #861ff1;
         text-align: left;
+        font-size: 2vw;
     }
 
     .compras {
@@ -142,6 +146,7 @@ HTML{
         margin-left: 8vw;
         color: #f55b64;
         text-align: left;
+        font-size: 2vw;
     }
 
     .section-cards {
